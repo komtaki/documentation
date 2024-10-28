@@ -4585,10 +4585,13 @@ components:
           example: test-name
           type: string
         resources:
-          description: An allowlist of resources to restrict pulling metrics for.
+          description: An allowlist of resources to restrict pulling metrics for including
+            `'web', 'dns', 'lb' (load balancer), 'worker'`.
           example:
           - web
           - dns
+          - lb
+          - worker
           items:
             type: string
           type: array
@@ -4633,10 +4636,13 @@ components:
           example: test-name
           type: string
         resources:
-          description: An allowlist of resources to restrict pulling metrics for.
+          description: An allowlist of resources to restrict pulling metrics for including
+            `'web', 'dns', 'lb' (load balancer), 'worker'`.
           example:
           - web
           - dns
+          - lb
+          - worker
           items:
             type: string
           type: array
@@ -4702,10 +4708,13 @@ components:
           description: The name of the Cloudflare account.
           type: string
         resources:
-          description: An allowlist of resources to restrict pulling metrics for.
+          description: An allowlist of resources to restrict pulling metrics for including
+            `'web', 'dns', 'lb' (load balancer), 'worker'`.
           example:
           - web
           - dns
+          - lb
+          - worker
           items:
             type: string
           type: array
